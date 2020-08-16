@@ -14,13 +14,18 @@ class TooltipUsage extends StatelessWidget {
             // * tip 7: use tooltips to make your app accesible
 
             Tooltip(
-              message: i.toString(),
+              message: i == 2 ? 'Otro tooltip' : i.toString(),
               child: FloatingActionButton(
+                heroTag: i.toString(),
                 mini: true,
                 child: Icon(Icons.add),
                 onPressed: () {},
               ),
-            )
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.only(topLeft: Radius.circular(20.0)),
+              ),
+            ),
         ],
       ),
     );

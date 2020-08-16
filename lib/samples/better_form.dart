@@ -120,7 +120,7 @@ class _AppTextFormField extends StatelessWidget {
       // * tip 6: set a response
 
       onFieldSubmitted: (_) {
-        if (isLast) {
+        if (!isLast) {
           FocusScope.of(context).nextFocus(
               /* here goes your widget's FocusNode */);
         }
