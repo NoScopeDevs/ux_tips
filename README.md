@@ -1,4 +1,4 @@
-# flutter_ux_tips
+# Flutter UX Tips
 
 A new Flutter project.
 
